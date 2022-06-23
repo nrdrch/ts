@@ -2,7 +2,7 @@
 ## Save time on post installation configuration of Arch Linux i3-gaps
 ### have a decent looking base ready to be build upon
 ```
-mkdir ~/Downloads && cd ~/Downloads && git clone https://github.com/nrdrch/i3ts.git && cd i3ts && sudo chmod +x i3ts.sh
+mkdir ~/Downloads && cd ~/Downloads && git clone https://github.com/nrdrch/ts.git && cd ts && sudo chmod +x ts.sh
 ```
 #### (run without sudo)
 ```
