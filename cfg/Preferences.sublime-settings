@@ -1,0 +1,19 @@
+{
+	"theme": "Default Dark.sublime-theme",
+	"color_scheme": "Mariana.sublime-color-scheme",
+	"font_size": 11,
+	"spell_check": true,
+	"highlight_line": true,
+	"caret_style": "smooth",
+	"auto_complete_commit_on_tab": true,
+	"auto_complete_use_history": true,
+	"auto_hide_menu": true,
+	"highlight_modified_tabs": true,
+	"hot_exit": "disabled",
+	"remember_layout": true,
+	
+
+	
+	
+	
+}
