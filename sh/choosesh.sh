@@ -1,5 +1,6 @@
 #!/bin/bash 
-
+clear
+echo "Choose a shell"
 PS3='Choose an option: '
 options=("Use Fish" "Use Zsh"  "Use Bash" "Back")
 select fav in "${options[@]}"; do
