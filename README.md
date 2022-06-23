@@ -10,7 +10,7 @@ mkdir ~/Downloads && cd ~/Downloads && git clone https://github.com/nrdrch/ts.gi
 ```
 
 # what the different options will do: 
-## base: 
+## i3base: 
 #### installs: 
 polybar atom picom feh man-db alacritty btop neofetch base-devel fish rofi yay ly sublime-text-4
 #### sets: 
