@@ -14,7 +14,7 @@ select fav in "${options[@]}"; do
 	    
             	
 	
-		
+	    
    	    cd ~/ts/sh/
 	    ./mainprompt.sh
 	    
