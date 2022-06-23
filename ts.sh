@@ -5,10 +5,10 @@ cat $HOME/Downloads/ts/necessary.txt
 sleep 2s
 
 PS3='Choose an option: '
-options=("base" "fsdeps" "more apps" "fish alias" "grub utils" "Quit")
+options=("i3base" "fsdeps" "more apps" "fish alias" "grub utils" "Quit")
 select fav in "${options[@]}"; do
     case $fav in
-        "base")
+        "i3base")
 	    cd $HOME
  	    mkdir Applications Documents Music Pictures
             clear
@@ -62,7 +62,7 @@ select fav in "${options[@]}"; do
 
 	    echo "the mildly useful and totally unbiased:"
 	    cat $HOME/Downloads/ts/necessary.txt
-            echo "1) base "
+            echo "1) i3base "
 	    echo "2) fsdeps "
 	    echo "3) more apps"
 	    echo "4) fish alias"
@@ -70,9 +70,9 @@ select fav in "${options[@]}"; do
 	    echo "6) Quit"
 	    echo " "
 	    echo " "
-	    echo ">last chosen option: 1) base"
+	    echo ">last chosen option: 1) i3base"
 	    echo "Options used to far:" >> ~/Downloads/ts/log.txt
-	    echo "1) base" >> ~/Downloads/ts/log.txt
+	    echo "1) i3base" >> ~/Downloads/ts/log.txt
 	    cat ~/Downloads/ts/log.txt
 
             ;;
@@ -84,7 +84,7 @@ select fav in "${options[@]}"; do
 
 	    echo "the mildly useful and totally unbiased:"
 	    cat $HOME/Downloads/ts/necessary.txt
-            echo "1) base "
+            echo "1) i3base "
 	    echo "2) fsdeps "
 	    echo "3) more apps"
 	    echo "4) fish alias"
@@ -107,7 +107,7 @@ select fav in "${options[@]}"; do
 	    echo "the mildly useful and totally unbiased:"
 	    cat $HOME/Downloads/ts/necessary.txt
 
-            echo "1) base "
+            echo "1) i3base "
 	    echo "2) fsdeps "
 	    echo "3) more apps"
 	    echo "4) fish alias"
@@ -129,7 +129,7 @@ select fav in "${options[@]}"; do
 	    echo "the mildly useful and totally unbiased:"
 	    cat $HOME/Downloads/ts/necessary.txt
 
-            echo "1) base "
+            echo "1) i3base "
 	    echo "2) fsdeps "
 	    echo "3) more apps"
 	    echo "4) fish alias"
@@ -151,7 +151,7 @@ select fav in "${options[@]}"; do
 	    cat $HOME/Downloads/ts/necessary.txt
 
 
-            echo "1) base "
+            echo "1) i3base "
 	    echo "2) fsdeps "
 	    echo "3) more apps"
 	    echo "4) fish alias"
@@ -165,7 +165,7 @@ select fav in "${options[@]}"; do
             ;;
         "Quit")
           clear
-		echo "please Note: A reboot is required for option:[ base ] to function."
+		echo "please Note: A reboot is required for option:[ i3base ] to function."
 		exit
 	        ;;
         *) echo "invalid option $REPLY";;
