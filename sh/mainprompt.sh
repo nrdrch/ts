@@ -1,3 +1,5 @@
+cat $HOME/ts/necessary.txt
+
 #!/bin/bash
 echo "1) Base"
 echo "2) File System Drivers"
