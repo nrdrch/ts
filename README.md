@@ -6,7 +6,7 @@ mkdir ~/Downloads && cd ~/Downloads && git clone https://github.com/nrdrch/ts.gi
 ```
 #### (run without sudo)
 ```
-./i3ts.sh
+./ts.sh
 ```
 
 # what the different options will do: 
