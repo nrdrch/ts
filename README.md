@@ -1,6 +1,6 @@
 # Arch Linux Time Saver
-## Save time on post installation configuration of Arch Linux i3-gaps
-### have a decent looking base ready to be build upon
+## Save time on post installation configuration of Arch Linux
+### have a decent base ready to be build upon
 ```
 git clone https://github.com/nrdrch/ts.git -o ~/ts && cd ~/ts && sudo chmod +x ts.sh
 ```
