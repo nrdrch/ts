@@ -1,11 +1,11 @@
 #!/bin/bash
 
 echo "moejoe's mildly useful and totally unbiased:"
-cat $HOME/ts/necessary.txt
+cat $HOME/ts/ignore/necessary.txt
 sleep 2s
 
 PS3='Choose an option: '
-options=("Base" "" "Quit")
+options=("Base" "Configure" "Get More Apps" "Quit")
 select fav in "${options[@]}"; do
     case $fav in
         "Base")
@@ -15,7 +15,7 @@ select fav in "${options[@]}"; do
             	
 	
 	    
-   	    cd ~/ts/sh/
+   	    cd ~/ts/ignore/
 	    ./mainprompt.sh
 	    
             ;;
