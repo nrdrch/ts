@@ -120,7 +120,7 @@ select fav in "${options[@]}"; do
 	    cat ~/Downloads/ts/log.txt
             ;;
         "fish alias")
-            cd ~/Downloads/ts/cfg/
+            cd ~/Downloads/ts/sh/
 	    sudo chmod +x fishalias.sh
             ./fishalias.sh
 
@@ -129,14 +129,7 @@ select fav in "${options[@]}"; do
 	    echo "the mildly useful and totally unbiased:"
 	    cat $HOME/Downloads/ts/necessary.txt
 
-            echo "1) i3base "
-	    echo "2) fsdeps "
-	    echo "3) more apps"
-	    echo "4) fish alias"
-	    echo "5) grub utils"
-	    echo "6) Quit"
-	    echo " "
-	    echo " "
+
       	    echo ">last chosen option 4) fish alias"
 
 	    echo "4) fish alias" >> ~/Downloads/ts/log.txt
