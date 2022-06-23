@@ -5,7 +5,7 @@ PS3='Choose an option: '
 options=("Base" "i3-gaps" "Back")
 select fav in "${options[@]}"; do
     case $fav in
-        "Base")
+        "Base Packages")
             sudo pacman -S --needed --noconfirm man-db btop neofetch mpv
             sudo pacman -S --noconfirm base-devel
             clear
