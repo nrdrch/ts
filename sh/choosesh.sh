@@ -1,7 +1,7 @@
 #!/bin/bash 
 
 PS3='Choose an option: '
-options=("Use Fish (friendly interactive shell"  "Use Bash" "Back")
+options=("Use Fish (friendly interactive shell" "Use Zsh"  "Use Bash" "Back")
 select fav in "${options[@]}"; do
     case $fav in
         "Use Fish (friendly interactive shell")
