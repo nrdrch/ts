@@ -60,6 +60,8 @@ bindsym $mod+q kill
 bindsym $mod+space exec --no-startup-id rofi -show run -theme ~/.config/rofi/launchers/misc/blurry.rasi
 bindsym $mod+d exec --no-startup-id rofi -show run -theme ~/.config/rofi/launchers/misc/blurry.rasi
 
+bindsym $mod+e exec --no-startup-id rofi -show filebrowser -theme ~/.config/rofi/launchers/misc/blurry.rasi
+
 
 
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -203,3 +205,9 @@ floating_minimum_size 420 x 540
 exec_always --no-startup-id polybar -c ~/.config/polybar/config.ini
 exec_always --no-startup-id picom --config ~/.config/picom/config
 exec_always --no-startup-id feh --bg-fill ~/Pictures/spaceguy.jpg
+# uncomment  the lines below to mount another block device on startup. 
+# you may use 'sudo sfdisk -l' to list the available devices and their partitions
+#
+# exec_always --no-startup-id udisksctl mount -b /path/to/a/partition1
+# exec_always --no-startup-id udisksctl mount -b /path/to/a/partition2
+# exec_always --no-startup-id udisksctl mount -b /path/to/a/partition3
