@@ -1,4 +1,4 @@
-cat $HOME/ts/necessary.txt
+cat $HOME/ts/ignore/necessary.txt
 
 #!/bin/bash
 echo "1) Base"
