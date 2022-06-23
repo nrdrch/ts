@@ -1,5 +1,5 @@
 #!/bin/bash
-
+ 
 echo "moejoe's mildly useful and totally unbiased:"
 cat $HOME/ts/ignore/necessary.txt
 sleep 2s
@@ -11,7 +11,7 @@ select fav in "${options[@]}"; do
         "Base")
 	    cd ~/ts/sh/
             sudo chmod +x base.sh
-	    
+	    ./base.sh
             	
 	
 	    
