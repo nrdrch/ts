@@ -48,4 +48,4 @@ alias --save alacrittycfg="sudo subl ~/.config/alacritty/alacritty.yml"
 alias --save btopcfg="sudo subl ~/.config/btop/btop.conf"
 alias --save roficfg="cd ~/.config/rofi/"
 
-echo "4) fish alias" >> ~/Downloads/i3ts/log.txt
+
