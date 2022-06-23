@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "the mildly useful and totally unbiased:"
-cat $HOME/Downloads/i3ts/necessary.txt
+cat $HOME/Downloads/ts/necessary.txt
 sleep 2s
 
 PS3='Choose an option: '
@@ -14,8 +14,8 @@ select fav in "${options[@]}"; do
             clear
 	    cd $HOME/.config
             mkdir polybar picom alacritty
-            sudo touch $HOME/Downloads/i3ts/tog.txt
-            sudo chmod 777 $HOME/Downloads/i3ts/log.txt
+            sudo touch $HOME/Downloads/ts/tog.txt
+            sudo chmod 777 $HOME/Downloads/ts/log.txt
             clear
             sudo pacman -S --needed --noconfirm polybar picom feh man-db alacritty btop neofetch fish mpv
 	    sudo pacman -S --noconfirm base-devel
@@ -39,15 +39,15 @@ select fav in "${options[@]}"; do
 	    
 	    
             sudo rm -r -d ~/.config/i3/config
-            sudo mv ~/Downloads/i3ts/cfg/config ~/.config/i3/config
-            sudo mv ~/Downloads/i3ts/cfg/config.ini ~/.config/polybar/config.ini
-            sudo mv ~/Downloads/i3ts/cfg/picomconfig ~/.config/picom/config
-            sudo mv ~/Downloads/i3ts/cfg/spaceguy.jpg ~/Pictures/spaceguy.jpg
-            sudo mv ~/Downloads/i3ts/cfg/Baldurs-Gare-Dark-Alliance.jgp ~/Pictures/Baldurs-Gare-Dark-Alliance.jgp
+            sudo mv ~/Downloads/ts/cfg/config ~/.config/i3/config
+            sudo mv ~/Downloads/ts/cfg/config.ini ~/.config/polybar/config.ini
+            sudo mv ~/Downloads/ts/cfg/picomconfig ~/.config/picom/config
+            sudo mv ~/Downloads/ts/cfg/spaceguy.jpg ~/Pictures/spaceguy.jpg
+            sudo mv ~/Downloads/ts/cfg/Baldurs-Gare-Dark-Alliance.jgp ~/Pictures/Baldurs-Gare-Dark-Alliance.jgp
             sudo rm -r -d /usr/share/fish/functions/fish_greeting.fish
-	    sudo mv ~/Downloads/i3ts/cfg/fish_greeting.fish /usr/share/fish/functions/fish_greeting.fish
+	    sudo mv ~/Downloads/ts/cfg/fish_greeting.fish /usr/share/fish/functions/fish_greeting.fish
 	    sudo rm -r -d ~/.config/alacritty/alacritty.yml
-	    sudo mv ~/Downloads/i3ts/cfg/alacritty.yml ~/.config/alacritty/alacritty.yml
+	    sudo mv ~/Downloads/ts/cfg/alacritty.yml ~/.config/alacritty/alacritty.yml
 
 
 
@@ -61,7 +61,7 @@ select fav in "${options[@]}"; do
             clear
 
 	    echo "the mildly useful and totally unbiased:"
-	    cat $HOME/Downloads/i3ts/necessary.txt
+	    cat $HOME/Downloads/ts/necessary.txt
             echo "1) base "
 	    echo "2) fsdeps "
 	    echo "3) more apps"
@@ -71,9 +71,9 @@ select fav in "${options[@]}"; do
 	    echo " "
 	    echo " "
 	    echo ">last chosen option: 1) base"
-	    echo "Options used to far:" >> ~/Downloads/i3ts/log.txt
-	    echo "1) base" >> ~/Downloads/i3ts/log.txt
-	    cat ~/Downloads/i3ts/log.txt
+	    echo "Options used to far:" >> ~/Downloads/ts/log.txt
+	    echo "1) base" >> ~/Downloads/ts/log.txt
+	    cat ~/Downloads/ts/log.txt
 
             ;;
         "fsdeps")
@@ -83,7 +83,7 @@ select fav in "${options[@]}"; do
             clear
 
 	    echo "the mildly useful and totally unbiased:"
-	    cat $HOME/Downloads/i3ts/necessary.txt
+	    cat $HOME/Downloads/ts/necessary.txt
             echo "1) base "
 	    echo "2) fsdeps "
 	    echo "3) more apps"
@@ -93,8 +93,8 @@ select fav in "${options[@]}"; do
 	    echo " "
 	    echo " "
 	    echo ">last chosen option: 2) fsdeps"
-	    echo "2) fsdeps" >> ~/Downloads/i3ts/log.txt
-	    cat ~/Downloads/i3ts/log.txt
+	    echo "2) fsdeps" >> ~/Downloads/ts/log.txt
+	    cat ~/Downloads/ts/log.txt
 
 	          ;;
         "more apps")
@@ -105,7 +105,7 @@ select fav in "${options[@]}"; do
 	    yay -S --noconfirm --needed ksnip-git
             clear
 	    echo "the mildly useful and totally unbiased:"
-	    cat $HOME/Downloads/i3ts/necessary.txt
+	    cat $HOME/Downloads/ts/necessary.txt
 
             echo "1) base "
 	    echo "2) fsdeps "
@@ -116,18 +116,18 @@ select fav in "${options[@]}"; do
 	    echo " "
 	    echo " "
       	    echo ">last chosen option: 3) have more"
-	    echo "3) more apps" >> ~/Downloads/i3ts/log.txt
-	    cat ~/Downloads/i3ts/log.txt
+	    echo "3) more apps" >> ~/Downloads/ts/log.txt
+	    cat ~/Downloads/ts/log.txt
             ;;
         "fish alias")
-            cd ~/Downloads/i3ts/cfg/
+            cd ~/Downloads/ts/cfg/
 	    sudo chmod +x fishalias.sh
             ./fishalias.sh
 
             clear
 
 	    echo "the mildly useful and totally unbiased:"
-	    cat $HOME/Downloads/i3ts/necessary.txt
+	    cat $HOME/Downloads/ts/necessary.txt
 
             echo "1) base "
 	    echo "2) fsdeps "
@@ -139,8 +139,8 @@ select fav in "${options[@]}"; do
 	    echo " "
       	    echo ">last chosen option 4) fish alias"
 
-	    echo "4) fish alias" >> ~/Downloads/i3ts/log.txt
-	    cat ~/Downloads/i3ts/log.txt
+	    echo "4) fish alias" >> ~/Downloads/ts/log.txt
+	    cat ~/Downloads/ts/log.txt
             ;;
         "grub utils")
             sudo pacman -S --noconfirm os-prober
@@ -148,7 +148,7 @@ select fav in "${options[@]}"; do
 	    sudo os-prober
 
 	    echo "the mildly useful and totally unbiased:"
-	    cat $HOME/Downloads/i3ts/necessary.txt
+	    cat $HOME/Downloads/ts/necessary.txt
 
 
             echo "1) base "
@@ -160,8 +160,8 @@ select fav in "${options[@]}"; do
 	    echo " "
 	    echo " "
 	    echo ">last chosen option: 5) grub utils"
-	    echo "5) grub utils" >> ~/Downloads/i3ts/log.txt
-	    cat ~/Downloads/i3ts/log.txt
+	    echo "5) grub utils" >> ~/Downloads/ts/log.txt
+	    cat ~/Downloads/ts/log.txt
             ;;
         "Quit")
           clear
