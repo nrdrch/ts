@@ -2,7 +2,7 @@
 #!/bin/bash
 
 PS3='Choose an option: '
-options=("Base" "i3-gaps" "Back")
+options=("i3-gaps Base" "" "Back")
 select fav in "${options[@]}"; do
     case $fav in
         "Base Packages")
