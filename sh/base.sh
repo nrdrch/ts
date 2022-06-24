@@ -2,10 +2,10 @@
 echo ""
 
 PS3='Are you sure?'
-options=("i3-gaps Base" "" "Back")
+options=("Yes" "" "Back")
 select fav in "${options[@]}"; do
     case $fav in
-        "")
+        "Yes")
             sudo pacman -S --needed --noconfirm man-db btop neofetch mpv
             sudo pacman -S --noconfirm base-devel
             clear
