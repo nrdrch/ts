@@ -1,25 +1,23 @@
 #!/bin/bash
- 
+clear
 echo "moejoe's mildly useful and totally unbiased:"
 sleep 0.5s
 cat $HOME/ts/ignore/necessary.txt
 sleep 2s
 
 PS3='Choose an option: '
-options=("Base" "Configure" "Get More Apps" "Quit")
+options=("i3-gaps Base"  "Get More Apps" "Quit")
 select fav in "${options[@]}"; do
     case $fav in
-        "Base")
+        "i3-gaps Base")
 	    cd ~/ts/sh/
             sudo chmod +x base.sh
-	    ./base.sh
-            	
-	
-	    
+	    ./base.sh	    
    	    cd ~/ts/ignore/
 	    ./mainprompt.sh
 	    
             ;;
+	"Get More Apps"
 
         "Quit")
           clear
