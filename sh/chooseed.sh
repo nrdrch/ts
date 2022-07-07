@@ -4,7 +4,7 @@ clear
 cat $HOME/ts/ignore/necessary.txt
 sleep 0.2s
 PS3='Which Text-Editor do you want to use?: '
-options=("Sublime Text4" "Neovim" "VS Codium" "Back")
+options=("Sublime Text4" "Neovim" "VS Codium" "Atom" "Back")
 select fav in "${options[@]}"; do
     case $fav in
         "Sublime Text4")
@@ -50,8 +50,27 @@ select fav in "${options[@]}"; do
 	    
 	    cd ~/ts/sh
             ./choosely.sh
-            
-            
+	    
+	    
+            ;;
+        "Atom")
+	    cd ~/Applications
+	    git clone https://aur.archlinux.org/ripgrep-git.git
+	    cd ripgrep-git/
+	    makepkg -si
+	    cd ~/Applications
+	    git clone https://aur.archlinux.org/apm.git
+	    cd apm/
+	    makepkg -si
+
+	    
+	    
+	    
+	    clear
+            echo ">>  Installed Atom| $(date)" >> ~/ts/sh/mainprompt.sh
+	    
+	    cd ~/ts/sh
+            ./choosely.sh
             ;;
         "Back")
         
