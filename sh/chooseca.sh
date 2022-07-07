@@ -54,6 +54,12 @@ select fav in "${options[@]}"; do
         
             ;;
         "Virt-Manager/QEMU/KVM")
+            cd ~/Applications 
+            git clone https://github.com/BigAnteater/KVM-GPU-Passthrough/
+            
+            cd ~/ts/sh
+            ./chooseintamd.sh
+            
             
             
             
