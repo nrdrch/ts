@@ -1,5 +1,7 @@
 #!/bin/bash 
 clear
+cat $HOME/ts/ignore/necessary.txt
+sleep 0.2s
 echo "Do you want to use ly as your display manager?"
 PS3='Choose an option: '
 options=("Yes" "No")
