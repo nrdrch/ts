@@ -28,19 +28,20 @@ select fav in "${options[@]}"; do
              ./choosegmaprompt.sh
              
              ;;
-             
         "Common Applications")
-        
-        
-
-
-
+             cd ~/ts/sh 
+             ./chooseca.sh
+             
+             clear
+             cd ~/ts/sh 
+             ./choosegmaprompt.sh
+             
+             ;;
              clear
              cd ~/ts/sh 
              ./choosegmaprompt.sh
             
              ;;
-
         "Back")
           clear
                 exit
