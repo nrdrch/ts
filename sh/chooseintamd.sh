@@ -17,8 +17,8 @@ select fav in "${options[@]}"; do
       
       
       	    clear
-	    cd ~/ts/sh
-	    ./kvm.sh
+	    cd ~/Applications/KVM-GPU-Passthrough/
+	    sudo ./libvirt_configuration.sh
             ;;
         "AMD CPU")
 	    cd ~/Applications/KVM-GPU-Passthrough/
@@ -27,8 +27,8 @@ select fav in "${options[@]}"; do
 	    
       
       
-            cd ~/ts/sh
-	    ./kvm.sh
+            cd ~/Applications/KVM-GPU-Passthrough/
+	    sudo ./libvirt_configuration.sh
 	    ;;
       
         *) echo "invalid option $REPLY";;
