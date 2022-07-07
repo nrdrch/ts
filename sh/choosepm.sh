@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PS3='Choose an option: '
+PS3='Get Another Package Manager: '
 options=("Snap" "Flatpak" "Pip" "Back")
 select fav in "${options[@]}"; do
     case $fav in
