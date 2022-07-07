@@ -35,12 +35,7 @@ select fav in "${options[@]}"; do
              clear
              cd ~/ts/sh 
              ./choosegmaprompt.sh
-             
-             ;;
-             clear
-             cd ~/ts/sh 
-             ./choosegmaprompt.sh
-            
+
              ;;
         "Back")
           clear
