@@ -16,9 +16,6 @@ select fav in "${options[@]}"; do
 	    ./i3base.sh
 	    clear
 	    
-   	    cd ~/ts/sh
-	    ./mainprompt.sh
-	    
             ;;
 	"Get More Apps")
 	    cd ~/ts/sh
