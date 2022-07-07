@@ -18,7 +18,8 @@ select fav in "${options[@]}"; do
 	    
             ;;
 	"Get More Apps"
-
+		
+	    ;;
         "Quit")
           clear
         echo "please Note: A reboot is required for various things to function correctly."
