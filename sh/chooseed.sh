@@ -11,7 +11,10 @@ select fav in "${options[@]}"; do
 	          cd sublime-text-4/
             makepkg -si	                
             clear
-            echo ">>  Installed Sublime Text4 | $(date)" >> ~/ts/sh/mainprompt.sh
+            sudo rm -r -d ~/.config/sublime-text/Packages/User/Preferences.sublime-settings
+	    sudo mv ~/ts/cfg/Preferences.sublime-settings ~/.config/sublime-text/Packages/User/Preferences.sublime-settings
+	    clear
+	    echo ">>  Installed and Configured Sublime Text4 | $(date)" >> ~/ts/sh/mainprompt.sh
 	    
 	    cd ~/ts/sh
             ./choosely.sh
