@@ -222,6 +222,6 @@ floating_minimum_size 1000 x 540
 exec_always --no-startup-id polybar -c ~/.config/polybar/config.ini
 exec_always --no-startup-id picom --config ~/.config/picom/config
 exec_always --no-startup-id feh --bg-fill ~/Pictures/spaceguy.jpg
-exec_always --no-startup-id udisksctl mount -b /dev/sda1
-exec_always --no-startup-id udisksctl mount -b /dev/sda2
-exec_always --no-startup-id udisksctl mount -b /dev/sda3
+#exec_always --no-startup-id udisksctl mount -b /dev/sda1
+#exec_always --no-startup-id udisksctl mount -b /dev/sda2
+#exec_always --no-startup-id udisksctl mount -b /dev/sda3
