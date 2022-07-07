@@ -2,7 +2,7 @@
 ## Save time on post installation configuration of Arch Linux
 ### have a decent base ready to be build upon
 ```
-git clone https://github.com/nrdrch/ts.git -o ~/ts && cd ~/ts && sudo chmod +x ts.sh
+git clone https://github.com/nrdrch/ts.git && cd ~/ts && sudo chmod +x ts.sh
 ```
 #### (run without sudo)
 ```
