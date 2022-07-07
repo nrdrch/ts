@@ -10,16 +10,16 @@ options=("i3-gaps Base"  "Get More Apps" "Quit")
 select fav in "${options[@]}"; do
     case $fav in
         "i3-gaps Base")
-	    cd ~/ts/sh/
+	        cd ~/ts/sh/
             sudo chmod +x base.sh
-	    ./base.sh	    
-   	    cd ~/ts/ignore/
-	    ./mainprompt.sh
+	        ./base.sh	    
+   	        cd ~/ts/ignore/
+	       ./mainprompt.sh
 	    
             ;;
-	"Get More Apps")
+	    "Get More Apps")
 		
-	    ;;
+	        ;;
         "Quit")
           clear
         echo "please Note: A reboot is required for various things to function correctly."
