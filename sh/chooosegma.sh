@@ -2,16 +2,18 @@
 clear
 echo "Choose a shell"
 PS3='Choose an option: '
-options=("" "Use Zsh"  "Use Bash" "Back")
+options=("Package Managers" "The Usual Stuff"  "Useful Utilities" "Back")
 select fav in "${options[@]}"; do
     case $fav in
-        "Use Fish")
+        "Package Managers")
+             cd ~/ts/sh
+             ./choosepm.sh
 
              ;;
-        "Use Zsh")
+        "The Usual Stuff")
 
              ;;
-        "Use Bash")
+        "Useful Utilities")
         
              ;;
 
