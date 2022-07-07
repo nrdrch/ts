@@ -12,9 +12,11 @@ select fav in "${options[@]}"; do
         "Yes")
             sudo pacman -S --needed --noconfirm man-db 
             sudo pacman -S --noconfirm base-devel
+            echo ">>  Installed fish and set it as default | $(date)" >> ~/ts/ignore/mainprompt.sh
             clear
             cd ~/ts/sh
             ./choosesh.sh
+            
             clear 
             cd ~/ts/sh
             
