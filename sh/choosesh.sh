@@ -15,7 +15,9 @@ select fav in "${options[@]}"; do
              clear
              cd ~/ts/sh 
              ./fishalias.sh
-             
+	     clear
+	     cd ~/ts/sh
+             ./mainprompt.sh
              cd ~/ts
              ./ts.sh
              
