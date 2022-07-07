@@ -1,5 +1,7 @@
 #!/bin/bash 
 clear
+cat $HOME/ts/ignore/necessary.txt
+sleep 0.2s
 PS3='Choose an option: '
 options=("Spotify" "Discord" "Telegram" "Session" "Virt-Manager/QEMU/KVM" "")
 select fav in "${options[@]}"; do
