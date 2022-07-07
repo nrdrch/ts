@@ -3,7 +3,7 @@ clear
 echo "moejoe's mildly useful and totally unbiased:"
 sleep 0.5s
 cat $HOME/ts/ignore/necessary.txt
-sleep 2s
+sleep 0.2s
 
 PS3='Choose an option: '
 options=("i3-gaps Base"  "Get More Apps" "Quit")
