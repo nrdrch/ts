@@ -10,22 +10,22 @@ options=("Yes" "Back")
 select fav in "${options[@]}"; do
     case $fav in
         "Yes")
-        sudo pacman -S --needed --noconfirm man-db 
+            sudo pacman -S --needed --noconfirm man-db 
             sudo pacman -S --noconfirm base-devel
             clear
             cd ~/ts/sh
             ./choosesh.sh
             clear 
             cd ~/ts/sh
-            ./choosete.sh
+            
             
             
             ;;
         	
         "Back")
           clear
-        exit
-            ;;
+                exit
+                ;;
         *) echo "invalid option $REPLY";;
     esac
 done
