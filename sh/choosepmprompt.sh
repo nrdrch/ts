@@ -1,8 +1,10 @@
 #!/bin/bash
 cat $HOME/ts/ignore/necessary.txt
-echo "1) Snap"
-echo "2) Flatpak"
-echo "3) Pip"
-echo "4) Pacaur"
-echo "5) Yay"
-echo "6) Back"
+options=("Package Managers" "The Usual Stuff"  "Useful Utilities" "Back")
+echo "1) Package Managers"
+echo "2) The Usual Stuff"
+echo "3) Useful Utilities"
+echo "4) Back"
+echo " "
+echo " "
+
