@@ -7,9 +7,6 @@ sleep 0.2s
 cd ~/ts/sh/
 sudo chmod +x *.sh
 sudo chmod 777 *.sh
-
-cd ~/ts/sh
-./mainprompt.sh
 PS3='Choose an option: '
 options=("i3-gaps Base"  "Get More Apps" "Quit")
 select fav in "${options[@]}"; do
