@@ -22,15 +22,20 @@ select fav in "${options[@]}"; do
 
             ;;        
         "Neovim")
-            cd ~/Applications	    
-            git clone https://aur.archlinux.org/neovim-git.git 
-            cd neovim-git/  
-            makepkg -si	                
-            clear
+            sudo pacman -S --noconfirm neovim
+	    
+	    
+	    
+	    
+	    
+	    clear
             echo ">>  Installed Neovim | $(date)" >> ~/ts/sh/mainprompt.sh
+	    
+	    
 	    
 	    cd ~/ts/sh
             ./choosely.sh
+	    
 
             ;;            
         "VS Codium")
