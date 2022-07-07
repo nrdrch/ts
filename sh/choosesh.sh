@@ -1,5 +1,7 @@
 #!/bin/bash 
 clear
+cat $HOME/ts/ignore/necessary.txt
+sleep 0.2s
 PS3='Choose a Shell: '
 options=("Use Fish" "Use Zsh"  "Use Bash" "Back")
 select fav in "${options[@]}"; do
