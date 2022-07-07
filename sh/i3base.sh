@@ -10,15 +10,23 @@ options=("Yes" "Back")
 select fav in "${options[@]}"; do
     case $fav in
         "Yes")
-            sudo pacman -S --needed --noconfirm man-db 
             sudo pacman -S --noconfirm base-devel
+            sudo pacman -S --noconfirm picom rofi feh polybar alacritty
+            sudo pacman -S --needed --noconfirm man-db
+            
+            
+            sudo rm -r -d ~/.config/i3/config
+            sudo mv ~/ts/cfg/config ~/.config/i3/config
+            sudo mv ~/ts/cfg/config.ini ~/.config/polybar/config.ini
+            sudo mv ~/ts/cfg/picomconfig ~/.config/picom/config
+            sudo mv ~/ts/ignore/spaceguy.jpg ~/Pictures/spaceguy.jpg
+            sudo mv ~/ts/ignore/Baldurs-Gare-Dark-Alliance.jgp ~/Pictures/Baldurs-Gare-Dark-Alliance.jgp
+            sudo rm -r -d ~/.config/alacritty/alacritty.yml
+            sudo mv ~/ts/cfg/alacritty.yml ~/.config/alacritty/alacritty.yml
             echo ">>  Installed fish and set it as default | $(date)" >> ~/ts/ignore/mainprompt.sh
             clear
             cd ~/ts/sh
             ./choosesh.sh
-            
-            clear 
-            cd ~/ts/sh
             
             
             
