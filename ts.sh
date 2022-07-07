@@ -1,7 +1,7 @@
 #!/bin/bash
 clear
 echo "moejoe's mildly useful and totally unbiased:"
-sleep 0.5s
+sleep 0.4s
 cat $HOME/ts/ignore/necessary.txt
 sleep 0.2s
 cd ~/ts/sh/
