@@ -18,11 +18,19 @@ select fav in "${options[@]}"; do
              sudo pacman -S --noconfirm zsh
              sudo chsh -s /usr/bin/zsh &(whoami)
              echo ">>  Installed zsh and set it as default | $(date)" >> ~/ts/ignore/mainprompt.sh
+             clear
+             cd ~/ts
+             ./ts.sh
+             
              ;;
         "Use Bash")
              sudo pacman -S --noconfirm --needed bash
              sudo chsh -s /bin/bash &(whoami)
              echo ">>  Installed bash and set it as default | $(date)" >> ~/ts/ignore/mainprompt.sh
+             clear
+             cd ~/ts
+             ./ts.sh
+                          
              ;;
 
 
