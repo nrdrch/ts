@@ -1,5 +1,7 @@
 #!/bin/bash 
 clear
+cat $HOME/ts/ignore/necessary.txt
+sleep 0.2s
 PS3='Choose an option: '
 options=("Package Managers" "The Usual Stuff"  "Useful Utilities" "Common Applications" "Back")
 select fav in "${options[@]}"; do
