@@ -5,7 +5,7 @@ sleep 0.5s
 cat $HOME/ts/ignore/necessary.txt
 sleep 0.2s
 
-PS3='Are you sure?'
+PS3='Are you sure? '
 options=("Yes" "Back")
 select fav in "${options[@]}"; do
     case $fav in
