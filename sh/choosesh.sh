@@ -10,7 +10,7 @@ select fav in "${options[@]}"; do
              sudo chsh -s /usr/bin/fish &(whoami)
              echo ">>  Installed fish and set it as default | $(date)" >> ~/ts/ignore/mainprompt.sh
              clear
-             cd ~/ts/sh
+             cd ~/ts
              ./ts.sh
              
              ;;
