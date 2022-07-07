@@ -12,6 +12,9 @@ select fav in "${options[@]}"; do
             makepkg -si	                
             clear
             echo ">>  Installed Sublime Text4 | $(date)" >> ~/ts/sh/mainprompt.sh
+	    
+	    cd ~/ts/sh
+            ./choosely.sh
             
 
             ;;        
@@ -22,6 +25,9 @@ select fav in "${options[@]}"; do
             makepkg -si	                
             clear
             echo ">>  Installed Neovim | $(date)" >> ~/ts/sh/mainprompt.sh
+	    
+	    cd ~/ts/sh
+            ./choosely.sh
 
             ;;            
         "VS Codium")
@@ -31,6 +37,9 @@ select fav in "${options[@]}"; do
             makepkg -si
             clear
             echo ">>  Installed VS Codium | $(date)" >> ~/ts/sh/mainprompt.sh
+	    
+	    cd ~/ts/sh
+            ./choosely.sh
             
             
             ;;
