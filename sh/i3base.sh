@@ -34,9 +34,8 @@ select fav in "${options[@]}"; do
             ./choosesh.sh
             
             
-            
+            echo ">>  Performed i3-gaps base Installation | $(date)" >> ~/ts/sh/mainprompt.sh
             ;;
-        	
         "Back")
           clear
                 exit
