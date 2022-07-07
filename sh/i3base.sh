@@ -23,7 +23,7 @@ select fav in "${options[@]}"; do
             sudo mv ~/ts/ignore/Baldurs-Gare-Dark-Alliance.jgp ~/Pictures/Baldurs-Gare-Dark-Alliance.jgp
             sudo rm -r -d ~/.config/alacritty/alacritty.yml
             sudo mv ~/ts/cfg/alacritty.yml ~/.config/alacritty/alacritty.yml
-            echo ">>  Installed fish and set it as default | $(date)" >> ~/ts/sh/mainprompt.sh
+            
             clear
             cd ~/ts/sh
 	    ./chooseed.sh
