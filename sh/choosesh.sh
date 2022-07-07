@@ -1,7 +1,6 @@
 #!/bin/bash 
 clear
-echo "Choose a shell"
-PS3='Choose an option: '
+PS3='Choose a Shell: '
 options=("Use Fish" "Use Zsh"  "Use Bash" "Back")
 select fav in "${options[@]}"; do
     case $fav in
