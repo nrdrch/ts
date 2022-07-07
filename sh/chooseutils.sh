@@ -12,6 +12,8 @@ select fav in "${options[@]}"; do
              cd didyoumean-bin/
              makepkg -si
              clear
+             cd ~/ts/sh
+             ./chooseutilsprompt.sh
              
 
              ;;
@@ -21,18 +23,22 @@ select fav in "${options[@]}"; do
              git clone https://aur.archlinux.org/grub-hook.git
              cd grub-hook/
              makepkg -si
-             
+             clear
+             cd ~/ts/sh
+             ./chooseutilsprompt.sh
 
              ;;
         "Graphical Utilities")
         
              cd ~/ts/sh 
              ./choosegutils.sh
-        
+             clear
+             cd ~/ts/sh
+             ./chooseutilsprompt.sh
              
-             ;;
+             
 
-        "")
+        
              ;;
         "Back")
           clear
