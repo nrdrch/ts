@@ -13,7 +13,7 @@ select fav in "${options[@]}"; do
 	    cd ~/ts/sh/
             sudo chmod +x *.sh
 	    ./base.sh	    
-   	    cd ~/ts/ignore/
+   	    cd ~/ts/sh
 	    ./mainprompt.sh
 	    
             ;;
