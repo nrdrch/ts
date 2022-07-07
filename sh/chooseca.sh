@@ -49,7 +49,7 @@ select fav in "${options[@]}"; do
 
             clear
             cd ~/ts/sh
-            ./choosecapromp.sh
+            ./choosecaprompt.sh
         
         
             ;;
@@ -63,10 +63,9 @@ select fav in "${options[@]}"; do
             
             
             
-            
             clear
             cd ~/ts/sh
-            ./choosecapromp.sh
+            ./choosecaprompt.sh
             
             ;;
         "Back")
