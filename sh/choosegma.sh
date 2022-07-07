@@ -1,7 +1,7 @@
 #!/bin/bash 
 clear
 PS3='Choose an option: '
-options=("Package Managers" "The Usual Stuff"  "Useful Utilities" "Back")
+options=("Package Managers" "The Usual Stuff"  "Useful Utilities" "Common Applications" "Back")
 select fav in "${options[@]}"; do
     case $fav in
         "Package Managers")
@@ -20,7 +20,10 @@ select fav in "${options[@]}"; do
              clear
              
              ;;
-
+             
+        "Common Applications")
+            
+             ;;
 
         "Back")
           clear
