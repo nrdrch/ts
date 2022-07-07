@@ -12,7 +12,7 @@ select fav in "${options[@]}"; do
             
             clear
             cd ~/ts/sh
-            ./choosecaprompt
+            ./choosecaprompt.sh
         
             ;;
         "Discord")
@@ -24,7 +24,7 @@ select fav in "${options[@]}"; do
            
             clear
             cd ~/ts/sh
-            ./choosecaprompt
+            ./choosecaprompt.sh
             
             ;;
         "Telegram")
@@ -35,7 +35,7 @@ select fav in "${options[@]}"; do
             
             clear
             cd ~/ts/sh
-            ./choosecaprompt
+            ./choosecaprompt.sh
             
             ;;
         "Session")
@@ -47,7 +47,7 @@ select fav in "${options[@]}"; do
 
             clear
             cd ~/ts/sh
-            ./choosecapromp
+            ./choosecapromp.sh
         
         
             ;;
@@ -58,7 +58,7 @@ select fav in "${options[@]}"; do
             
             clear
             cd ~/ts/sh
-            ./choosecapromp
+            ./choosecapromp.sh
             
             ;;
         "Back")
