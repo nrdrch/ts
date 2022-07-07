@@ -7,8 +7,12 @@ options=("Did You Mean?(TUI Spellchecker)" "GRUB Utilities"  "Graphical Utilitie
 select fav in "${options[@]}"; do
     case $fav in
         "Did You Mean?(TUI Spellchecker)")
-             cd ~/ts/sh
-             ./choosepm.sh
+             cd ~/Applications
+             git clone https://aur.archlinux.org/didyoumean-bin.git
+             cd didyoumean-bin/
+             makepkg -si
+             clear
+             
 
              ;;
         "GRUB Utilities")
