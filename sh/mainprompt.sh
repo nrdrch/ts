@@ -1,11 +1,9 @@
 #!/bin/bash
 cat $HOME/ts/ignore/necessary.txt
 
-echo "1) Base"
-echo "2) File System Drivers"
-echo "3) Common Applications"
-echo "4) Configure"
-echo "5) GRUB Utilities"
+echo "1) i3-gaps Base"
+echo "2) Get More Apps"
+echo "3) Quit"
 echo "6) Quit"
 echo " "
 echo " "
