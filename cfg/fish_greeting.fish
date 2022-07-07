@@ -16,6 +16,6 @@ function fish_greeting
 
     # The greeting used to be skipped when fish_greeting was empty (not just undefined)
     # Keep it that way to not print superfluous newlines on old configuration
-    test -n "$fish_greeting"
-    and echo $fish_greeting
+    #test -n "$fish_greeting"
+    #and echo $fish_greeting
 end
