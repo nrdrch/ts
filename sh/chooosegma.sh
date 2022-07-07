@@ -1,6 +1,5 @@
 #!/bin/bash 
 clear
-echo "Choose a shell"
 PS3='Choose an option: '
 options=("Package Managers" "The Usual Stuff"  "Useful Utilities" "Back")
 select fav in "${options[@]}"; do
@@ -11,6 +10,8 @@ select fav in "${options[@]}"; do
 
              ;;
         "The Usual Stuff")
+             sudo pacman -S --noconfirm mpv btop neofetch man-db
+             sudo pacman -S --noconfirm ntfs-3g udisks2 btrfs-progs exfatprogs f2fs-tools dosfstools jfsutils cryptsetup lvm2 util-linux nilfs-utils xfsprogs
 
              ;;
         "Useful Utilities")
