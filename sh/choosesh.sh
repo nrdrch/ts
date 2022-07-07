@@ -8,8 +8,14 @@ select fav in "${options[@]}"; do
         "Use Fish")
              sudo pacman -S --noconfirm fish
              sudo chsh -s /usr/bin/fish &(whoami)
+             
+             sudo rm -r -d /usr/share/fish/functions/fish_greeting.fish
+	         sudo mv ~/ts/cfg/fish_greeting.fish /usr/share/fish/functions/fish_greeting.fish             
              echo ">>  Installed fish and set it as default | $(date)" >> ~/ts/ignore/mainprompt.sh
              clear
+             cd ~/ts/sh 
+             ./fishalias.sh
+             
              cd ~/ts
              ./ts.sh
              
