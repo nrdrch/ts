@@ -20,8 +20,11 @@ select fav in "${options[@]}"; do
             
         "Flatpak")
             sudo pacman -S --noconfirm --needed flatpak
+            clear
 
-
+            cd ~/ts/sh
+            ./choosepmprompt.sh
+        
 
             ;;
         "Pip")
@@ -32,6 +35,11 @@ select fav in "${options[@]}"; do
             git clone https://aur.archlinux.org/pacaur.git
             cd pacaur/
             makepkg -si
+            clear
+            cd ~/ts/sh
+            ./choosepmprompt.sh
+        
+            
             ;;
             
         "Yay")
@@ -39,6 +47,10 @@ select fav in "${options[@]}"; do
             git clone https://aur.archlinux.org/yay-bin.git
             cd yay-bin
             makepkg -si
+            clear
+            cd ~/ts/sh
+            ./choosepmprompt.sh
+        
             ;;
         "Back")
 
