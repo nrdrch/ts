@@ -8,6 +8,9 @@ select fav in "${options[@]}"; do
     case $fav in
         "GIMP)")
              sudo pacman -S --noconfirm
+             clear
+             cd ~/ts/sh
+             ./choosegutilsprompt.sh
 
              ;;
         "Kden-Live")
@@ -15,6 +18,9 @@ select fav in "${options[@]}"; do
              git clone https://aur.archlinux.org/kdenlive-git.git
              cd kdenlive-git/
              makepkg -si
+             clear
+             cd ~/ts/sh
+             ./choosegutilsprompt.sh
 
              ;;
         "K-SNIP")
@@ -23,11 +29,14 @@ select fav in "${options[@]}"; do
              git clone https://aur.archlinux.org/ksnip-git.git
              cd ksnip-git/
              makepkg -si
+             clear
+             cd ~/ts/sh
+             ./choosegutilsprompt.sh
         
              
-             ;;
+             
 
-        "")
+        
              ;;
         "Back")
           clear
