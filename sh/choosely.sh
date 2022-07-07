@@ -14,7 +14,7 @@ select fav in "${options[@]}"; do
             clear
 
             ;;
-        "Back")
+        "No")
           clear
                 exit
                 ;;
