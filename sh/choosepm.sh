@@ -12,6 +12,9 @@ select fav in "${options[@]}"; do
             makepkg -si
             sudo systemctl enable --now snapd.socket
             sudo ln -s /var/lib/snapd/snap /snap
+            clear
+            cd ~/ts/sh
+            ./choosepmprompt.sh
         
             ;;
             
