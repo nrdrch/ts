@@ -8,10 +8,10 @@ cd ~/ts/sh/
 sudo chmod +x *.sh
 sudo chmod 777 *.sh
 PS3='Choose an option: '
-options=("i3-gaps Base"  "Get More Apps" "Quit")
+options=("Post Installation Setup"  "Get More Apps" "Quit")
 select fav in "${options[@]}"; do
     case $fav in
-        "i3-gaps Base")
+        "Post Installation Setup")
 	    cd ~/ts/sh/
 	    ./i3base.sh
 	    clear
