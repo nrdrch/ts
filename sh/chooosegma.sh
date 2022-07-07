@@ -15,7 +15,10 @@ select fav in "${options[@]}"; do
 
              ;;
         "Useful Utilities")
-        
+             cd ~/ts/sh
+             ./chooseutils.sh
+             clear
+             
              ;;
 
 
