@@ -6,6 +6,8 @@ cat $HOME/ts/ignore/necessary.txt
 sleep 0.2s
 cd ~/ts/sh/
 sudo chmod +x *.sh
+sudo chmod 777 *.sh
+
 cd ~/ts/sh
 ./mainprompt.sh
 PS3='Choose an option: '
