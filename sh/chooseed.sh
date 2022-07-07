@@ -1,6 +1,8 @@
 
 #!/bin/bash 
 clear
+cat $HOME/ts/ignore/necessary.txt
+sleep 0.2s
 PS3='Which Text-Editor do you want to use?: '
 options=("Sublime Text4" "Neovim" "VS Codium" "Back")
 select fav in "${options[@]}"; do
