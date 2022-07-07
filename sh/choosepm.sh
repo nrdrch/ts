@@ -1,7 +1,7 @@
 #!/bin/bash
 
 PS3='Get Another Package Manager: '
-options=("Snap" "Flatpak" "Pip" "Back")
+options=("Snap" "Flatpak" "Pip" "Pacaur" "Yay" "Back")
 select fav in "${options[@]}"; do
     case $fav in
         "Snap")
@@ -23,10 +23,20 @@ select fav in "${options[@]}"; do
             ;;
         "Pip")
             sudo pacman -S --noconfirm --needed python python-pip
-
-
-
-            ;;        	
+            ;;
+        "Pacaur")
+            cd ~/Applications
+            git clone https://aur.archlinux.org/pacaur.git
+            cd pacaur/
+            makepkg -si
+            ;;
+            
+        "Yay")
+            cd ~/Applications*
+            git clone https://aur.archlinux.org/yay-bin.git
+            cd yay-bin
+            makepkg -si
+            ;;
         "Back")
 
           clear
