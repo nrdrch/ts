@@ -13,6 +13,11 @@ select fav in "${options[@]}"; do
             sudo pacman -S --noconfirm base-devel
             sudo pacman -S --noconfirm picom rofi feh polybar alacritty
             sudo pacman -S --needed --noconfirm man-db
+	        cd $HOME/Applications	    
+	        git clone https://aur.archlinux.org/sublime-text-4.git
+	        cd sublime-text-4/
+	        makepkg -si
+	                
             
             
             sudo rm -r -d ~/.config/i3/config
@@ -25,7 +30,9 @@ select fav in "${options[@]}"; do
             sudo mv ~/ts/cfg/alacritty.yml ~/.config/alacritty/alacritty.yml
             echo ">>  Installed fish and set it as default | $(date)" >> ~/ts/ignore/mainprompt.sh
             clear
+            
             cd ~/ts/sh
+            cd ~/ts/choosely.sh
             ./choosesh.sh
             
             
