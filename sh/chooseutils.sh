@@ -22,6 +22,9 @@ select fav in "${options[@]}"; do
              ;;
         "Graphical Utilities")
         
+             cd ~/ts/sh 
+             ./choosegutils.sh
+        
              
              ;;
 
