@@ -13,10 +13,10 @@ select fav in "${options[@]}"; do
             sudo pacman -S --noconfirm base-devel
             sudo pacman -S --noconfirm picom rofi feh polybar alacritty
             sudo pacman -S --needed --noconfirm man-db
-	        cd $HOME/Applications	    
-	        git clone https://aur.archlinux.org/sublime-text-4.git
-	        cd sublime-text-4/
-	        makepkg -si
+	    cd $HOME/Applications	    
+            git clone https://aur.archlinux.org/sublime-text-4.git
+	    cd sublime-text-4/
+	    makepkg -si
 	                
             
             
@@ -33,6 +33,8 @@ select fav in "${options[@]}"; do
             
             cd ~/ts/sh
             cd ~/ts/choosely.sh
+	    clear
+	    cd ~/ts/sh
             ./choosesh.sh
             
             
