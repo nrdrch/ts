@@ -2,7 +2,7 @@
 clear
 cat $HOME/ts/ignore/necessary.txt
 sleep 0.2s
-PS3='Select the Utilities for your needs: '
+PS3='Select the Tools you need: '
 options=("Did You Mean?(TUI Spellchecker)" "GRUB Utilities"  "Graphical Utilities" "Back")
 select fav in "${options[@]}"; do
     case $fav in
