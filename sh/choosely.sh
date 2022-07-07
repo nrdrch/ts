@@ -2,8 +2,7 @@
 clear
 cat $HOME/ts/ignore/necessary.txt
 sleep 0.2s
-echo "Do you want to use ly as your display manager?"
-PS3='Choose an option: '
+PS3='Do you want to use ly as your display manager?: '
 options=("Yes" "No")
 select fav in "${options[@]}"; do
     case $fav in
