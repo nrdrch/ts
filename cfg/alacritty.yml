@@ -168,7 +168,7 @@ colors:
   author: ""
   primary:
     background: "#111111"
-    foreground: "#ffffff"
+    foreground: "#83E493"
   cursor:
     text: "#111111"
     cursor: "#cccccc"
