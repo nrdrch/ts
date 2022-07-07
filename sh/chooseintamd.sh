@@ -17,15 +17,18 @@ select fav in "${options[@]}"; do
       
       
       	    clear
-	    
+	    cd ~/ts/sh
+	    ./kvm.sh
             ;;
         "AMD CPU")
 	    cd ~/Applications/KVM-GPU-Passthrough/
             sudo ./grub_setup_amd.sh
 	    clear
+	    
       
       
-      
+            cd ~/ts/sh
+	    ./kvm.sh
 	    ;;
       
         *) echo "invalid option $REPLY";;
