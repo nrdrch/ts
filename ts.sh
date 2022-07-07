@@ -17,7 +17,7 @@ select fav in "${options[@]}"; do
 	    ./mainprompt.sh
 	    
             ;;
-	"Get More Apps"
+	"Get More Apps")
 		
 	    ;;
         "Quit")
