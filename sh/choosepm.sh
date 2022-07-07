@@ -22,7 +22,7 @@ select fav in "${options[@]}"; do
 
             ;;
         "Pip")
-            sudo pacman -S --noconfirm --needed python-pip
+            sudo pacman -S --noconfirm --needed python python-pip
 
 
 
