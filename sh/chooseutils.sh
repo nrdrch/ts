@@ -16,8 +16,12 @@ select fav in "${options[@]}"; do
 
              ;;
         "GRUB Utilities")
-             sudo pacman -S --noconfirm mpv btop neofetch man-db
-             sudo pacman -S --noconfirm ntfs-3g udisks2 btrfs-progs exfatprogs f2fs-tools dosfstools jfsutils cryptsetup lvm2 util-linux nilfs-utils xfsprogs
+             sudo pacman -S --noconfirm grub-customizer
+             cd ~/Applications
+             git clone https://aur.archlinux.org/grub-hook.git
+             cd grub-hook/
+             makepkg -si
+             
 
              ;;
         "Graphical Utilities")
