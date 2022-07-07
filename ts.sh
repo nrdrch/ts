@@ -11,7 +11,7 @@ select fav in "${options[@]}"; do
     case $fav in
         "i3-gaps Base")
 	    cd ~/ts/sh/
-            sudo chmod +x base.sh
+            sudo chmod +x *.sh
 	    ./base.sh	    
    	    cd ~/ts/ignore/
 	    ./mainprompt.sh
