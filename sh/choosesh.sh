@@ -26,8 +26,8 @@ select fav in "${options[@]}"; do
 
         "Back")
           clear
-        exit
-            ;;
+                exit
+                ;;
         *) echo "invalid option $REPLY";;
     esac
 done
