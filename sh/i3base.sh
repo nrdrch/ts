@@ -27,11 +27,8 @@ select fav in "${options[@]}"; do
             clear
             cd ~/ts/sh
 	    ./chooseed.sh
-            cd ~/ts/sh
-            ./choosely.sh
-	    clear
-	    cd ~/ts/sh
-            ./choosesh.sh
+            
+	    
             
             
             echo ">>  Performed i3-gaps base Installation | $(date)" >> ~/ts/sh/mainprompt.sh
