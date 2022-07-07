@@ -1,7 +1,8 @@
 #!/bin/bash 
 clear
-echo "Choose a shell"
-PS3='Choose an option: '
+cat $HOME/ts/ignore/necessary.txt
+sleep 0.2s
+PS3='Select the Utilities for your needs: '
 options=("Did You Mean?(TUI Spellchecker)" "GRUB Utilities"  "Graphical Utilities" "Back")
 select fav in "${options[@]}"; do
     case $fav in
