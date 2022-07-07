@@ -12,10 +12,15 @@ select fav in "${options[@]}"; do
             sudo make install && sudo rm -r -d /etc/systemd/system/display-manager.service
             sudo systemctl enable ly.service
             clear
+            
+	        cd ~/ts/sh
+            ./choosesh.sh
 
             ;;
         "No")
           clear
+	      cd ~/ts/sh
+          ./choosesh.sh
                 exit
                 ;;
         *) echo "invalid option $REPLY";;
