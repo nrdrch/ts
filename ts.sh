@@ -14,7 +14,9 @@ select fav in "${options[@]}"; do
     case $fav in
         "i3-gaps Base")
 	    cd ~/ts/sh/
-	    ./i3base.sh	    
+	    ./i3base.sh
+	    clear
+	    
    	    cd ~/ts/sh
 	    ./mainprompt.sh
 	    
